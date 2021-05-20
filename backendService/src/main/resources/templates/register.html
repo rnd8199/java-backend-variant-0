@@ -1,0 +1,29 @@
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+  <meta charset = "ISO-8859-1">
+  
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/styles/css/style.css}"></link>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <center>
+        <h1>Register</h1></center>
+      </div>
+    </div>
+    <div class="main">
+      <div class="container">
+        <center>
+          <form th:action="@{/register}" th:object="${user}" method="POST" >
+            <input type="text" placeholder="Enter Email Id" name="" value=""><br>
+            <input type="password" placeholder="Enter Password" name="" value=""><br>
+            <input type="text" placeholder="Enter Mobile Number" name="" value=""><br>
+            <button type="submit">Signup</button>
+            <button formaction="/login">Go to Login page</button>
+          </form>
+        </center>
+      </div>
+    </div>
+  </body>
+</html>

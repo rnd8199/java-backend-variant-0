@@ -1,0 +1,47 @@
+body{
+  font-family: helvetica;
+  background-color: #C0C0C0;
+}
+p{
+  line-height: 2em;
+}
+.header
+{
+  margin:auto;
+  margin-top: 5em;
+  border-radius: 10px;
+  width:40%;
+  background-color: #CA1010;
+  color: lavender;
+  padding:10px;
+
+}
+.container
+{
+  width:40%;
+  margin:auto;
+  text-align: center;
+}
+.main{
+  margin-top: 4em;
+}
+
+input{
+  border: 1px grey solid;
+  border-radius: 5px;
+  padding:10px 200px 10px 10px;
+  margin: 10px;
+  box-sizing: 40%;
+}
+button{
+  margin-top: 4em;
+  margin-left: 1em;
+  border: none;
+  padding: 10px 35px 10px 35px;;
+  background-color: crimson;
+  color:white;
+}
+button:hover{
+  background-color: red;
+  color:white;
+}

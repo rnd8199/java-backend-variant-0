@@ -1,0 +1,36 @@
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+  <meta charset="ISO-8859-1">
+
+    <title>This is the Dashboard</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/styles/css/style.css}" />
+  </head>
+  <body>
+  		<style th:inline="text">
+  		body{
+    		background: url([[@{/img/Background.jpg}]])
+                	no-repeat center center fixed;
+                	}   			
+		</style>
+    <div class="header">
+      <div class="container">
+        <h1>This is the Dashboard</h1>
+      </div>
+    </div>
+    <form>
+      <div class="main">
+        <div class="container">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
