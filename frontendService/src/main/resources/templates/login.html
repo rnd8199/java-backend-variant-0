@@ -1,7 +1,6 @@
 <html xmlns:th="http://www.thymeleaf.org" >
   <head>
   <meta charset="ISO-8859-1">
-
     <title>Login</title>
     <link rel="stylesheet" type="text/css" th:href="@{/styles/css/style.css}"></link>
   </head>
@@ -15,9 +14,9 @@
     <div class="main">
       <div class="container">
         <center>
-          <form th:action="@{/login}">
-            <input type="text" placeholder="Enter Username" th:name="username" value=""><br>
-            <input type="password" placeholder="Enter Password" th:name="password" value=""><br>
+          <form th:action="@{/login}" th:object="${login}" th:method:"POST">
+            <input type="text" placeholder="Enter Username" name="" value=""><br>
+            <input type="password" placeholder="Enter Password" name="" value=""><br>
             <button type="Submit">Login</button>
           </form>
         </center>

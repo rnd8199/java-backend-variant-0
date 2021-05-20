@@ -14,11 +14,11 @@
     <div class="main">
       <div class="container">
         <center>
-          <form th:action="@{/register}" >
-            <input type="text" placeholder="Enter User name" th:name="username" value=""><br>
-            <input type="text" placeholder="Enter Email Id" th:name="emailid" value=""><br>
-            <input type="text" placeholder="Enter Password" th:name="password" value=""><br>
-            <input type="text" placeholder="Enter Mobile Number" th:name="contact" value=""><br>
+          <form th:action="@{/register}" th:object="${user}" th:method= "POST">
+            <input type="text" placeholder="Enter User name" name="" value=""><br>
+            <input type="text" placeholder="Enter Email Id" name="" value=""><br>
+            <input type="text" placeholder="Enter Password" name="" value=""><br>
+            <input type="text" placeholder="Enter Mobile Number" name="" value=""><br>
             <button type="submit">Signup</button>
             <button formaction="/login">Go to Login page</button>
           </form>
